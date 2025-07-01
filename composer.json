@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=8.1",
-        "symfony/lock": "^7.3"
+        "symfony/lock": "^6.4|^7.0"
     },
     "suggest": {
         "symfony/lock": "For Symfony Lock Component integration (^6.4|^7.0)"
