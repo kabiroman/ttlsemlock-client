@@ -1,0 +1,45 @@
+{
+    "name": "kabiroman/ttlsemlock-client",
+    "description": "PHP client for TtlSemLock - high-performance distributed semaphore with TTL",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["semaphore", "lock", "distributed", "ttl", "concurrency", "synchronization"],
+    "authors": [
+        {
+            "name": "TtlSemLock Team"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/lock": "^7.3"
+    },
+    "suggest": {
+        "symfony/lock": "For Symfony Lock Component integration (^6.4|^7.0)"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TtlSemLock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TtlSemLock\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.6.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
